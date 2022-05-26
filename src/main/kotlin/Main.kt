@@ -42,4 +42,23 @@ fun main(){
     val e: Float = 2.7182818284f
     println(e) // -> 2.7182817
 
+
+    /*
+        Conversiones entre tipos de datos (explicito)
+            [siendo 'el' un tipo de dato]
+            - el.toByte() -> Byte
+            - el.toShort() -> Short
+            - el.toInt() -> Int
+            - el.toLong() -> Long
+            - el.toFloat() -> Float
+            - el.toDouble() -> Double
+            - el.toChar() -> Char
+            - el.toString() -> String
+    */
+
+    val x: Byte = 1
+    // val y: Int = x -> ERRROR!!! recuerda que x es un Byte pero y es un Int, entonces...
+    val y: Int = x.toInt();
+    println(y)
+
 }
